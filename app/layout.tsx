@@ -5,7 +5,7 @@ const siteDescription =
   "HexDoku is a spellbinding hex logic game. Place one crystal in every ascending lane, descending lane, and color group without letting crystals touch.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hexdoku.openai.site"),
+  metadataBase: new URL("https://hexdoku-game.girgust1.chatgpt.site"),
   title: {
     default: "HexDoku | A Spellbinding Hex Puzzle",
     template: "%s | HexDoku",

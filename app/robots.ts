@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://hexdoku.openai.site/sitemap.xml",
+    sitemap: "https://hexdoku-game.girgust1.chatgpt.site/sitemap.xml",
   };
 }

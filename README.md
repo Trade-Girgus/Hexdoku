@@ -3,6 +3,8 @@
 The official website for **HexDoku**, a witchy hex-grid logic game by Trade's
 Arcade.
 
+Live site: [hexdoku-game.girgust1.chatgpt.site](https://hexdoku-game.girgust1.chatgpt.site)
+
 ## What is included
 
 - a responsive home page built around the real HexDoku board and crystal style
