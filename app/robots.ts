@@ -1,11 +1,17 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function robots(): MetadataRoute.Robots {
+  const siteUrl = process.env.PAGES_BASE_PATH
+    ? "https://trade-girgus.github.io/Hexdoku"
+    : "https://hexdoku-game.girgust1.chatgpt.site";
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://hexdoku-game.girgust1.chatgpt.site/sitemap.xml",
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }

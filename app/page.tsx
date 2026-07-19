@@ -13,6 +13,8 @@ import {
 import { HeroBoard, RuleBoard } from "./components/HexArt";
 import { SiteFooter, SiteHeader } from "./components/SiteChrome";
 
+const assetPrefix = process.env.PAGES_BASE_PATH ?? "";
+
 const rules = [
   {
     number: "01",
@@ -182,7 +184,7 @@ export default function Home() {
           <div className="app-art">
             <div className="icon-halo" aria-hidden="true" />
             <img
-              src="/hexdoku-icon.png"
+              src={`${assetPrefix}/hexdoku-icon.png`}
               alt="HexDoku app icon showing a crystal and X marks on a hex grid"
               width={1024}
               height={1024}
@@ -300,7 +302,7 @@ export default function Home() {
       <section className="closing-section">
         <div className="section-inner closing-inner">
           <img
-            src="/hexdoku-icon.png"
+            src={`${assetPrefix}/hexdoku-icon.png`}
             alt=""
             width={120}
             height={120}

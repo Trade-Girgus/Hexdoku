@@ -2,12 +2,14 @@
 import Link from "next/link";
 import { GitFork, Mail } from "lucide-react";
 
+const assetPrefix = process.env.PAGES_BASE_PATH ?? "";
+
 export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/">
         <img
-          src="/hexdoku-icon.png"
+          src={`${assetPrefix}/hexdoku-icon.png`}
           alt=""
           width={42}
           height={42}
@@ -40,7 +42,7 @@ export function SiteFooter() {
       <div className="section-inner footer-inner">
         <Link className="brand footer-brand" href="/">
           <img
-            src="/hexdoku-icon.png"
+            src={`${assetPrefix}/hexdoku-icon.png`}
             alt=""
             width={38}
             height={38}

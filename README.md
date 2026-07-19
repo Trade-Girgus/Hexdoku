@@ -1,9 +1,14 @@
-# HexDoku Website
+# HexDoku
 
 The official website for **HexDoku**, a witchy hex-grid logic game by Trade's
 Arcade.
 
-Live site: [hexdoku-game.girgust1.chatgpt.site](https://hexdoku-game.girgust1.chatgpt.site)
+## Open the website
+
+**[Visit the actual HexDoku website](https://trade-girgus.github.io/Hexdoku/)**
+
+The repository page you are reading contains the website's source code. The
+link above opens the designed, interactive website.
 
 ## What is included
 
