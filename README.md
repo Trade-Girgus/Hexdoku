@@ -1,7 +1,6 @@
 # HexDoku
 
-The official website for **HexDoku**, a witchy hex-grid logic game by Trade's
-Arcade.
+The official website for **HexDoku**, a hex-grid logic game by Trade's Arcade.
 
 ## Open the website
 
@@ -12,10 +11,10 @@ link above opens the designed, interactive website.
 
 ## What is included
 
-- a responsive home page built around the real HexDoku board and crystal style
-- visual explanations for all four game rules
-- feature, scoring, FAQ, and development-contact sections
-- dedicated support and privacy pages
+- a focused, phone-first introduction to HexDoku
+- clear explanations of the four game rules
+- the current app icon and the same color system used by the game
+- a dedicated privacy page
 - search metadata, social metadata, a sitemap, and robots configuration
 - accessible focus states, semantic page structure, and reduced-motion support
 
@@ -23,19 +22,16 @@ link above opens the designed, interactive website.
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Game introduction, rules, features, scoring, and FAQ |
-| `/support` | Bug reports, feedback, help, and quick answers |
-| `/privacy` | Plain-language privacy information |
+| `/` | Game introduction and rules |
+| `/privacy` | Privacy information and contact details |
 
 ## Project structure
 
 ```text
 app/
 ├── components/
-│   ├── HexArt.tsx       # Reusable crystal, X, board, and rule artwork
 │   └── SiteChrome.tsx   # Header and footer
 ├── privacy/page.tsx
-├── support/page.tsx
 ├── globals.css          # Complete visual system and responsive behavior
 ├── layout.tsx           # Site-wide metadata and document shell
 ├── page.tsx             # Main HexDoku website
@@ -68,11 +64,10 @@ The site is built with React, Next.js-compatible app routes, and
 ## Content updates
 
 - Edit the home page text and sections in `app/page.tsx`.
-- Edit colors, spacing, board art, and responsive styling in `app/globals.css`.
-- Edit the reusable hex layouts in `app/components/HexArt.tsx`.
+- Edit colors, spacing, and responsive styling in `app/globals.css`.
 - Update the contact address in the `mailto:` links if support changes.
 - Replace `public/hexdoku-icon.png` when the final app icon is ready.
 
 ## Contact
 
-Feedback and bug reports: [tradesarcade@gmail.com](mailto:tradesarcade@gmail.com)
+Feedback and bug reports: [hexdoku@gmail.com](mailto:hexdoku@gmail.com)

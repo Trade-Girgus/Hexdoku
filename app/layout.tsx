@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const siteDescription =
-  "HexDoku is a spellbinding hex logic game. Place one crystal in every ascending lane, descending lane, and color group without letting crystals touch.";
+  "HexDoku is a logic puzzle on a hexagonal board. Find every crystal using four simple rules and no guessing.";
 const siteUrl = process.env.PAGES_BASE_PATH
   ? "https://trade-girgus.github.io/Hexdoku"
   : "https://hexdoku-game.girgust1.chatgpt.site";
@@ -11,7 +11,7 @@ const assetPrefix = process.env.PAGES_BASE_PATH ?? "";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "HexDoku | A Spellbinding Hex Puzzle",
+    default: "HexDoku | Hex Logic Puzzle",
     template: "%s | HexDoku",
   },
   description: siteDescription,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "logic game",
     "iPhone puzzle game",
     "Sudoku alternative",
-    "witchy game",
+    "deduction game",
   ],
   authors: [{ name: "Trade's Arcade" }],
   creator: "Trade's Arcade",
@@ -31,28 +31,28 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "HexDoku | A Spellbinding Hex Puzzle",
+    title: "HexDoku | Hex Logic Puzzle",
     description: siteDescription,
     siteName: "HexDoku",
     images: [
       {
-        url: "/og.png",
-        width: 1743,
-        height: 909,
-        alt: "A colorful HexDoku board with glowing crystals and white X marks",
+        url: "/hexdoku-icon.png",
+        width: 1024,
+        height: 1024,
+        alt: "HexDoku app icon",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HexDoku | A Spellbinding Hex Puzzle",
+    title: "HexDoku | Hex Logic Puzzle",
     description: siteDescription,
-    images: ["/og.png"],
+    images: ["/hexdoku-icon.png"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#120b2e",
+  themeColor: "#090612",
   colorScheme: "dark",
 };
 

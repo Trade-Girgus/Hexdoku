@@ -4,15 +4,11 @@ import { ArrowLeft } from "lucide-react";
 export default function NotFound() {
   return (
     <main className="not-found">
-      <div className="lost-rune" aria-hidden="true">
-        <span>?</span>
-      </div>
-      <p className="section-kicker">This lane leads nowhere</p>
-      <h1>That page is outside the puzzle.</h1>
-      <p>The link may have moved, or the spell may have been written wrong.</p>
+      <p className="eyebrow">404</p>
+      <h1>That page is not part of the puzzle.</h1>
       <Link className="button button-primary" href="/">
         <ArrowLeft size={18} aria-hidden="true" />
-        Return to HexDoku
+        Back to HexDoku
       </Link>
     </main>
   );
